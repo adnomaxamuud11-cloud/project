@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application - Haboon Furniture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f2ee;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #8b5e3c;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #8b5e3c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #6f4a2f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1> online Job Application</h1>
+    <p>Fill the form below to apply for a job</p>
+
+    <form id="jobForm">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Your full name">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phoneNum" placeholder="+252 61XXXXXXX">
+
+        <label for="age">Age (20 - 63)</label>
+
+    <input type="number" id="age" placeholder="Enter your age" min="20" max="63">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@email.com">
+
+        <label for="job">Job Position</label>
+        <select id="job">
+            <option value="">-- Select a Job --</option>
+            <option value="sales">Sales Person</option>
+            <option value="delivery">Delivery Driver</option>
+            <option value="carpenter">Carpenter</option>
+            <option value="cleaner">Cleaner</option>
+        </select>
+
+        <label for="experience">Work Experience</label>
+        <input type="number" id="experience" min="2" max="5" placeholder="Years of experience">
+        <button type="submit" class="submit-btn">SUBMIT APPLICATION</button>
+    </form>
+</div>
+
+<!-- Link JavaScript -->
+<script src="main.js"></script>
+</body>
+</html>
